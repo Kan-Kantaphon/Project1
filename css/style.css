@@ -126,11 +126,11 @@ h2 {
         transform:rotate(360deg);
     }
 }
-.content, .more-content {
+.content, .more-content, .content-more {
     margin-bottom: 20px;
 }
 
-.more-content > h2 {
+.more-content, .content-more > h2 {
     color: white;
 }
 
@@ -266,5 +266,15 @@ footer {
     text-align: center;
     color:rgba(255, 255, 255, 0.4)
 }
+.content-more {
+    display: none;
+}
 
-
+@media only screen and (max-width:768px){
+    .more-content {
+        display: none;
+    }
+    .content-more {
+        display: inline;
+    }
+}
